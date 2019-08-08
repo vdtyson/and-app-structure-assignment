@@ -8,8 +8,6 @@ class DateUtils {
         fun formatDate(date: Date) : String {
             val format = SimpleDateFormat("dd/MM/yyy")
             return format.format(date)
-
-            var i = "i"
         }
 
         // TODO: Other date formatting util methods here...
