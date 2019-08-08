@@ -1,15 +1,18 @@
 package com.lambdaschool.android.organization.util
 
+import java.text.NumberFormat
+
 class TextUtils {
     companion object {
-        // TODO: format the currency using NumberFormat.getCurrencyInstance - refer to the docs
         fun formatCurrency(price : Double) : String {
-            return ""
+            val defaultCurrencyFormat = NumberFormat.getCurrencyInstance().format(price)
+
+            return defaultCurrencyFormat
         }
 
-        // TODO: format the percent using NumberFormat.getPercentInstance - refer to the docs
         fun formatPercent(discount : Double) : String {
-            return ""
+            val defaultPercentFormat = NumberFormat.getPercentInstance().format(discount)
+            return "${defaultPercentFormat} discount!"
         }
     }
 }
